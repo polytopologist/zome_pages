@@ -1,0 +1,199 @@
+
+<html>
+
+<head>
+   <title>The Desargues Configuration in Zome</title>
+<style>
+<!--
+body         { font-family: Courier New }
+-->
+</style>
+
+</head>
+<body>
+
+<p><center>
+<font size=6><b>
+The Desargues Configuration <br>
+</b></font>
+</center></p>
+
+
+<p><b>Introduction.</b></p>
+
+<p> The Desargues configuration is a geometrical system consisting of 10 lines and 10 points arranged in such a way
+that 3 points lie on every line and 3 lines lie on every point.  
+The configuration plays a prominent role in the somewhat outmoded study called "projective geometry".  If an introductory course in this subject is taught properly,
+then one must inevitably encounter the following "Desargues theorem":<br>
+<center><i>If two triangles are perspective from a point, then they are perspective from a line.</i></center><br>
+Since this is a course in projective geometry, one automatically has the dual statement, obtained by interchanging the words
+"point" and "line".  In fact, the theorem is true for all projective spaces over the real numbers.  Nevertheless, this theorem
+is a falsehood for some projective spaces.  Naturally enough, one calls a space "Desarguesian" or "non-Desarguesian"
+depending on the verity of this statement.  After seeing this theorem, one uses it to define harmonic sets, perspectivities, projectivities,
+and eventually prove the fundamental theorem of projective geometry.
+</p>
+
+<p>
+As one of the references below describes, there are 8 different plane configurations which possess exactly 10 lines and exactly 10 points arranged
+in such a way that 3 points lie on every line and 3 lines lie on every point.  Another characterization is needed:  If such a configuration is
+given, then it is a Desargues configuration if, given any embedded complete quadrilateral, the remaining elements comprise a complete quadrangle.
+A "complete quadrilateral" is an
+any arrangement of 4 lines in general position taken with all 6 intersection points, and, dually,
+a "complete quadrangle" is 
+any arrangement of 4 points in general position taken with all 6 of the lines joining all the pairs of points.
+</p>
+
+<p>
+Here is another way to characterize the Desargues configuration.
+Notice that among the subsets of {1,2,3,4,5}, exactly 10 of them are comprised of two elements {a,b} and exactly 10 of them are comprised of 3 elements
+{c,d,e}.  Having drawn a Desargues configuration, one may mark each point with a subset consisting of two elements and
+and mark each line with a subset consisting of three elements.  A point {a,b} then lies on the line {c,d,e} if and only if {a,b} is a subset of {c,d,e}.
+</p>
+
+<p>As one may expect, it is possible to depict the Desargues configuration:</p>
+
+
+<p ALIGN=CENTER><APPLET CODE="GSP.class"  ARCHIVE="jsp4.jar" CODEBASE="jsp" WIDTH=726 HEIGHT=551 ALIGN=CENTER>
+<PARAM NAME=MeasureInDegrees VALUE=1><PARAM NAME=DirectedAngles VALUE=0>
+<PARAM NAME=BackRed VALUE=255>
+<PARAM NAME=BackGreen VALUE=255>
+<PARAM NAME=BackBlue VALUE=255>
+<PARAM NAME=Construction VALUE="
+{1} Point(305,321)[color(255,255,255)];
+{2} Point(411,364)[color(255,255,255)];
+{3} Line(2,1)[color(0,0,0),thick];
+{4} Point(400,414)[color(255,255,255)];
+{5} Line(4,1)[color(0,0,0),thick];
+{6} Point(322,417)[color(255,255,255)];
+{7} Line(6,1)[color(0,0,0),thick];
+{8} Point on object(3,-1.66412)[color(255,255,255)];
+{9} Point on object(5,-1.07995)[color(255,255,255)];
+{10} Point on object(7,-0.65313)[color(255,255,255)];
+{11} Line(10,9)[color(255,0,0),thick];
+{12} Line(4,6)[color(0,0,255),thick];
+{13} Line(9,8)[color(255,0,0),thick];
+{14} Line(2,4)[color(0,0,255),thick];
+{15} Line(10,8)[color(255,0,0),thick];
+{16} Line(2,6)[color(0,0,255),thick];
+{17} Intersect(13,14)[color(255,255,255)];
+{18} Intersect(15,16)[color(255,255,255)];
+{19} Intersect(11,12)[color(255,255,255)];
+{20} Line(19,17)[color(0,255,0),thick];
+">
+Sorry, this page requires a Java-compatible web browser.</APPLET><br>
+
+<center><b>Figure 1.</b> The Desargues Configuration, Java Sketchpad.</center>
+
+</p>
+
+<p>
+In this sketch, one should notice 3 black lines, 3 red lines, 3 blue lines, and 1 green line.
+The black lines are concurrent, and the red and blue triangles are perspective with respect to this point
+of concurrency.  The Desargues theorem says that the two triangles are persective with respect to a line, and
+this is drawn as green in the sketch.  One may move any of the 7 points which lie on the black lines
+in order to see the effect on the rest of the sketch.  It is also a nice exercise to draw this manually,
+labelling the points and lines with subsets of {1,2,3,4,5} as described earlier
+</p>
+
+<p><b>Zome Models.</b></p>
+
+<p>
+So far, this has been a tremendous amount of background on the topic that you came for, so here we go.  The following is a Zome
+model of the Desargues configuration:
+</p>
+
+<center>
+<img src="images/desargueszome.jpg"><br><br>
+<b>Figure 2.</b>  Zome Model of the Desargues Configuration.
+</center></p>
+
+<p>
+One should notice first that there are indeed 10 lines.  Three of the lines are each represented by a single strut
+and the other seven are each represented by 2 collinear struts.  One should thus see a total of 17 struts.
+Naturally, one uses connector balls to represent points of the configuration.
+In the photographed model, however, notice that there are only 9 balls, and so only 9 points are represented in the model.
+This is closely related to the fact that three of the lines are represented by only one strut.  Notice
+that these three lines are mutually parallel.  In the language of projective geometry, one says that these lines
+intersect at the "plane at infinity".
+</p>
+
+<p><b>Desarguesian or non-Desarguesian?</b></p>
+
+<p>
+One can make at least a dozen different models of the Desargues configuration using Zome, but one will notice
+that it is extremely difficult to make one for which all 10 points are confined to finite space.  That is,
+it appears likely that every Zome model of the Desargues configuration has a triple of mutually parallel lines
+and thus a point at infinity.  Such an "ideal" model should have the following properties:  (a) It uses exactly 10 connectors.
+(b) It uses exactly 20 struts. (c) Each line is represented by 2 struts with 3 connectors serving as endpoints.
+</p>
+
+<p>
+Given that it is possible to make so many models which are "nearly ideal" and that, generally, if a nice Zome model exists, then it is usually easy to make, 
+it seems reasonable to conjecture
+that an ideal Zome model of the Desargues configuration does not exist.  In other words, one might conjecture
+that Zome is "non-Desarguesian", if one broadens the meaning of this term slightly.
+</p>
+
+<p><b>Addendum.</b></p>
+
+<p>
+As has been described above, it is possible to make at least a small handful of Zome models of the Desargues configuration
+which fall just short of having the ideal property of realizing all 10 points in finite space.  Indeed, one can make at least a dozen
+models having all of the following properties:  (a) It uses exactly 9 connectors.  (b) It uses exactly 17 struts.  
+(c) For each line represented by 3 connectors and 2 struts, the 2 struts are in golden proportion.  
+(d) The 3 parallel lines (with their intersection at infinity) are represented by 3 struts having 3 different lengths.
+Notice that the three mutually parallel segments must also be in golden proportion.  Luckily, Zome struts are made in 3 different lengths 
+for each color!
+</p>
+
+<p>
+Notice finally that there appear to be two different species of these "9-ball" models.  The following photographs show
+both of these species.  One of the species has 1 black ball, 1 purple ball, 2 green balls, and 5 white balls, while
+the other has 2 purple balls, 3 green balls, and 4 white balls.  The color of any particular ball
+designates the the number of struts emanating
+from that ball; white, green, purple, and black correspond respectively to 3, 4, 5, and 6.
+</p>
+
+
+<p>
+<center><table BORDER=0 cellpadding=25>
+   <tr>
+      <td align="center">
+        <p><img src="images/desargues1.jpg"></p>
+      </td>
+      <td align="center">
+        <p><img src="images/desargues2.jpg"></p>
+      </td>
+   </tr>
+</table>
+<b>Figure 3.</b> Two Species of Zome Models of the Desargues Configuration.<br>
+</center>
+</p>
+
+
+<p><b>References.</b></p>
+
+<p>
+H. S. M. Coxeter. <i>Introduction to Geometry.</i> 2nd ed.
+John Wiley & Sons, New York, 1969.
+</p>
+
+<p>
+Burkard Polster.  <i> A Geometrical Picture Book. </i> Springer-Verlag Inc., 
+New York, 1998.
+</p>
+
+<hr>
+
+
+
+<p>
+<a href="zomeindex.htm">Zome Projects Index</a><br>
+<a href="http://homepages.wmich.edu/~drichter/">Home</a>
+</p>
+
+<hr>
+
+
+</body>
+</html>

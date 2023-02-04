@@ -1,0 +1,204 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Zome Model of Gosset's Figure</title>
+<style>
+<!--
+body         { font-family: Courier New }
+-->
+</style>
+</head>
+
+<body>
+<p align="center"><b><font size="6">
+Gosset's Figure in 8 Dimensions, <br>
+A Zome Model
+</font></b></p>
+<p align="center"><font face="Courier New">
+<img border="0" src="images/gosset062205.jpg"></font></p>
+
+
+<p>
+This is a Zome model of Gosset's figure 4<sub>21</sub> in 8 dimensions.  The vertices of 
+4<sub>21</sub> (from here on called "Gosset's figure") coincide with the 240 shortest non-zero
+elements of the E(8) lattice, also known as the E(8) root system.
+This page has brief descriptions on how to build the model and the mathematics behind
+the model.  For more details on the mathematics, one should consult the references given below.
+</p>
+
+<p><b>The Physical Model</b></p>
+
+<p>
+A requisite first step to understanding this model is to study the geometry and Zome model
+of the 600-cell.  As it turns out, this model of Gosset's figure is 
+the union of two concentric models of the 600-cell.  It is a remarkable fact that
+there are only two "natural" models of the 600-cell which can be built using standard
+Zome pieces,
+and that the union of these two objects turns out to represent the Gosset figure.
+</p>
+
+<p>
+Before attempting to build the Zome model of Gosset's figure, one should build two
+different sizes of the Zome model of the 600-cell, where the ratio of the two
+radii, naturally, are in golden proportion.  
+One may find instructions on how to build the Zome model of the 600-cell 
+<a href="zome_600cell.htm">here</a>.
+After doing this, one can move on
+to Gosset's figure.  First build the smaller of the two Zome models of the 600-cell.
+Having done this, one may build the larger of the two where the smaller serves as 
+a core.
+</p>
+
+<p> Upon building the larger of the two around the smaller, one will notice that many of the
+blue edges meet in false intersections.  This model is the union of two concenteric
+models of the 600-cell, one large and one small.  Exactly 30 of the blue edges on the outer
+shell of the small model intersect 30 of the blue edges of the core icosahedron
+of the large model.  Instead of resorting to half-blue struts, one can build the model
+so that 30 of the long blue struts of the large 600-cell are bent around 30 of the
+medium blue struts of the small 600-cell.
+</p>
+
+<p>
+One should note that this is a "vertex model" of Gosset's figure.  That is, although
+all of the vertices are represented by balls, many of the projected edges
+are not present in the model.  The difficulty arises because there are simply too many edges.
+While it is true that all of the projected edges lie in the usual red, blue, or
+yellow zones of Zome, many of them are too short to be included.  
+</p>
+
+
+
+<p>
+This model illustrates a phenomenon of "density variation".  Gosset's figure in
+eight dimensions can be regarded to "reside" on the surface of an 8-dimensional ball.
+In fact, all of the vertices of Gosset's figure are equidistant from the origin in
+8-dimensional space, and all of the edges lie in one orbit of the group acting on it.
+Thus, in some sense, Gosset's figure is "uniform" in the way it is distributed about
+the 7-dimensional sphere.  The model, however, represents the image of an orthogonal
+projection from 8-dimensional space to 3-dimensional space.  The measure on the 
+3-dimensional ball induced by this projection, assuming the measure on the 7-sphere
+to be invariant, has a greater density towards the center of the ball.  One
+can clearly see this phenomenon in this model because it has more "stuff" near the
+center.
+</p>
+
+<p align="center">
+<img width="256" src="images/gossetzome_left.jpg">
+<img width="256" src="images/gossetzome_right.jpg">
+<img width="256" src="images/gossetzome_left.jpg"> <br>
+Cross-Eyed and Parallel Free-View Stereographs <br>
+</p>
+
+
+<p><b> A Few Mathematical Details </b></p>
+
+
+<p>Here is a brief outline of some of the mathematics of Gosset's figure
+and why Zome works so well to model it.  If the reader needs more details,
+the references given below, especially the article by Moody and Patera,
+are certainly more complete and probably more clear.
+</p>
+
+<p>
+Denote by a and b the real roots of the quadratic x<sup>2</sup>-x-1 such that a &lt; b.  Thus, <br>
+<center>a = (1-sqrt(5))/2,  and b = (1+sqrt(5))/2. </center> <br>
+In other words, suppose b is the Golden Ratio, and a is
+its field-theoretic conjugate.
+</p>
+
+<p>
+Regard the quaternions <b>H</b> as the real span of 
+{<b>1</b>,<b>i</b>,<b>j</b>,<b>k</b>}, where <b>i</b>, <b>j</b>, and <b>k</b> 
+obey Hamilton's identity, <br>
+<center><b>i</b>^2 = <b>j</b>^2 = <b>k</b>^2 = <b>ijk</b> = -<b>1</b>. </center><br>
+Consider the set of four quaternions, <br>
+<center>
+S={<b>1</b>, (1/2)(-<b>1</b>-<b>i</b>-<b>j</b>-<b>k</b>), <b>i</b>, 
+(1/2)(-b<b>i</b>-a<b>j</b>+<b>k</b>)}. </center><br>
+This set S serves as a system of simple roots for the exceptional Coxeter group H(4).
+(Under quaternion multiplication, S generates a group isomorphic to the binary icosahedral
+group, the double cover in Spin(3) of the group of rotations of the regular icosahedron.)
+Moreover, these 120 quaternions constitute the vertices of the 600-cell.  The Zome
+model represents the image under the projection <br>
+<center>w+<b>i</b>x+<b>j</b>y+<b>k</b>z --&gt; <b>i</b>x+<b>j</b>y+<b>k</b>z </center><br>
+from <b>R</b><sup>4</sup> to <b>R</b><sup>3</sup>, where the balls occupy the locations of the projected
+vertices.
+</p>
+
+<p>
+Next, let T=aS, the set of quaternions in S shortened by the factor a = (1-sqrt(5))/2.  
+Then, under quaternion addition, the union of
+S and T generates a rank-8 subgroup L of <b>H</b>. 
+Let <b>K</b> denote the field extension
+of the rational numbers <b>Q</b> by adjoining the golden ratio b.
+There are two norms on <b>K</b>^4 which are important for this discussion.
+Choose a vector v in
+<b>K</b>^4.  Regarding v as a four-dimensional vector, one may identify it
+with a quaternion and define the "quaternion" norm <br>
+<center>Q(v) = |v|^2 = x + y sqrt(5), </center><br>
+where x and y are rational numbers and
+|.| denotes the usual quaternion length equivalent to the usual length function
+on <b>R</b>^4.  Regarding v as an 8-dimensional vector over <b>Q</b>, one also has
+the "icosian" norm <br>
+<center>I(v) = x + y, </center><br>
+where x and y are the rational numbers appearing in the quaternion norm.
+(Conway and Sloane describe this as the "Euclidean" norm.)
+</p>
+
+<p>
+Under the usual quaternion norm, L is a dense subset of the quaternions <b>H</b>.
+One may regard this subset as the source of many quasicrystalline
+phenomena.  However, under the icosian norm, L is isomorphic to the root lattice L(8) 
+for the exceptional Lie algebra E(8).  There are 240 vectors of minimal
+norm in this lattice, and these are none other than than the vertices of Gosset's
+figure.  The Zome model works because the small 600-cell is scaled down from
+the large 600-cell in the same way the set T is scaled down
+from the set S, namely, by dividing by the Golden Ratio.
+</p>
+
+
+<p><center>
+<img border="0" src="images/gosset040205_sm.jpg"><br>
+<font size="2">Cross-section of the brain of a Zomer, chronic stage.</font>
+</center></p>
+
+<p><b>References</b></p>
+
+<p>
+Veit Elser and N. J. A. Sloane.  
+A highly symmetric four-dimensional quasicrystal.
+<i> Phys. A: Math. Gen. </i> <b>20</b> (1987), 6161-6168.
+</p>
+
+<p>
+J. H. Conway and N. J. A. Sloane.
+<i>Sphere Packings, Lattices and Groups.</i> 2nd ed. Springer-Verlag, New York, 1992.
+</p>
+
+
+<p>
+Thorold Gosset.  On the regular and semi-regular figures in space of n dimensions.
+<i> Messenger of Math. </i> <b>29</b> (1900), 43-48.
+</p>
+
+<p>
+R. V. Moody and J. Patera.
+Quasicrystals and icosians.
+<i> Phys. A: Math. Gen. </i> <b>26</b> (1993), 2829-2853.
+</p>
+
+<hr>
+
+<p>
+<a href="zomeindex.htm">Zome Projects Index</a><br>
+<a href="http://homepages.wmich.edu/~drichter/">Home</a>
+</p>
+
+<hr>
+
+
+</body>
+
+</html>
