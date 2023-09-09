@@ -1,7 +1,8 @@
 theme: minima
 
 title: David Richter's Zometool Pages
+author: David Richter
 
 header_pages:
-  - about.md
+  - misczometoolmodels.htm
 
