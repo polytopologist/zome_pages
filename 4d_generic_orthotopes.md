@@ -98,8 +98,8 @@ We use dimensional analogy to help understand our visualization of 4-dimensional
 
 Here is a 2-dimensional drawing of a 3-dimensional generic corner orthotope:
 
-<figure style="width: 87%; margin: 5%">
-<center><svg
+<figure style="width: 60%; margin: 5%">
+<svg
    width=100%
    height=auto
    viewBox="0 0 27.845108 28.132292"
@@ -163,8 +163,8 @@ Here is a 2-dimensional drawing of a 3-dimensional generic corner orthotope:
        d="m 121.24356,144 -6.92821,-4 -6.9282,4 -6.9282,-4 -6.928206,4"
        id="path1668" />
   </g>
-</svg></center>
- <figcaption style="text-align: center; font-style: italic;">
+</svg>
+ <figcaption style="text-align: center;">
     A drawing of 3-dimensional generic corner orthotope.
  </figcaption>
  </figure>
