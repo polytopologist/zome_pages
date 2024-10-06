@@ -22,7 +22,7 @@ is quite natural to use vZome to visualize them.
 There are some prerequisites to understanding this page.
 We expect that a reader understands that a "zone" in a vector space is a partition of the space into mutually parallel lines.  For example, it is an important feature of its design that every connected Zometool model uses at most 31 zones (61 if one also uses green struts).  In the shapes shown below, we don't need more than 4 zones.  We are fortunate that we may choose 4 yellow zones arranged to have octahedral symmetry.  For example, this symmetry is apparent in the all-yellow shadow of the 4-dimensional cube:
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
  <vzome-viewer style="width: 100%; height: 60vh"
       src="https://polytopologist.github.io/vzome-sharing/2024/07/29/21-28-04-yellowcube/yellowcube.vZome" >
    <img  style="width: 100%"
@@ -44,7 +44,7 @@ A corollary to these properties of floral tangent cones is that every face and e
 
 Since every face of a floral vertex is floral, we should acquaint ourselves with 3-dimensional floral vertices before considering 4-dimensional floral vertices.  Up to congruence, there are precisely four types of 3-dimensional floral vertices.  These appear in the [reference](https://arxiv.org/abs/2210.12012), and we may also use vZome to visualize them:
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
 <vzome-viewer style="width: 100%; height: 60dvh" 
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-37-26-3dflower1/3dflower1.vZome" >
    <img  style="width: 100%"
@@ -55,7 +55,7 @@ Since every face of a floral vertex is floral, we should acquaint ourselves with
  </figcaption>
 </figure>
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-38-38-3dflower3/3dflower3.vZome" >
    <img  style="width: 100%"
@@ -66,7 +66,7 @@ Since every face of a floral vertex is floral, we should acquaint ourselves with
  </figcaption>
 </figure>
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
 <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-39-13-3dflower5/3dflower5.vZome" >
    <img  style="width: 100%"
@@ -77,7 +77,7 @@ Since every face of a floral vertex is floral, we should acquaint ourselves with
  </figcaption>
 </figure>
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
 <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-39-32-3dflower7/3dflower7.vZome" >
    <img  style="width: 100%"
@@ -99,7 +99,7 @@ We use dimensional analogy to help understand our visualization of 4-dimensional
 Here is a 2-dimensional drawing of a 3-dimensional generic corner orthotope:
 
 {::nomarkdown}
-<figure style="width: 60%; margin: 5%">
+<figure style="width: 60%; margin: auto; margin-block: 40px;">
 <svg
    width=100%
    height=auto
@@ -184,7 +184,7 @@ We also notice that an axonometric drawing of a 3-dimensional floral vertex has 
 
 Up to congruence, there are precisely ten types of 4-dimensional floral vertices.  These were described in the [reference](https://arxiv.org/abs/2210.12012)).  Because we are "sculpting" these in 3 dimensions, these come in five conjunctive/disjunctive dual pairs.  That is, up to equivalence, there are precisely five *boundaries* of 4-dimensional floral vertices.  We show these below:
 
-<figure style="width: 87%; margin: 5%"> 
+<figure style="width: 87%; margin: auto;"> 
 <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-33-15-4dflower1/4dflower1.vZome" >
    <img  style="width: 100%"
@@ -195,7 +195,7 @@ Up to congruence, there are precisely ten types of 4-dimensional floral vertices
  </figcaption>
 </figure>
 
-<figure style="width: 87%; margin: 5%"> 
+<figure style="width: 87%; margin: auto;"> 
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-33-31-4dflower3/4dflower3.vZome" >
    <img  style="width: 100%"
@@ -206,7 +206,7 @@ Up to congruence, there are precisely ten types of 4-dimensional floral vertices
  </figcaption>
 </figure>
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-34-45-4dflower5/4dflower5.vZome" >
    <img  style="width: 100%"
@@ -218,7 +218,7 @@ Up to congruence, there are precisely ten types of 4-dimensional floral vertices
 </figure>
 
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-34-57-4dflower7/4dflower7.vZome" >
    <img  style="width: 100%"
@@ -229,7 +229,7 @@ Up to congruence, there are precisely ten types of 4-dimensional floral vertices
  </figcaption>
 </figure>
 
-<figure style="width: 87%; margin: 5%"> 
+<figure style="width: 87%; margin: auto;"> 
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-35-11-4dflower9/4dflower9.vZome" >
    <img  style="width: 100%"
@@ -250,7 +250,7 @@ For example, consider the 4D floral vertex boundary for the pair with 5 or 11 or
 
 At long last, it is time to see a 4-dimensional generic corner orthotope:
 
-<figure style="width: 87%; margin: 5%">
+<figure style="width: 87%; margin: auto;">
 <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-39-20-universal00/universal00.vZome" >
    <img  style="width: 100%"
