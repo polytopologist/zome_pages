@@ -1,0 +1,961 @@
+<HTML><HEAD><TITLE>Octonions</TITLE>
+<META http-equiv=Content-Language content=en-us>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE>BODY {
+	FONT-FAMILY: Courier New
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2627" name=GENERATOR></HEAD>
+<BODY>
+<P align=center><B><FONT size=6>The Octonions<BR>
+Yet Another Essay
+</FONT></B></P>
+
+<p><b>
+Table of Contents:</b><br>
+<br>
+<a href="#intro">Introduction</a> <br>
+<a href="#getti">Getting Acquainted</a> <br>
+<a href="#actio">An Action by the Dihedral Group D<sub>6</sub></a> <br>
+<a href="#fanop">The Fano Plane</a> <br>
+<a href="#excep">The Exceptional Lie Algebra g<sub>2</sub></a> <br>
+<a href="#hammi">The Hamming Code and Gosset's Lattice</a> <br>
+<a href="#integ">Integral Octonions</a> <br>
+<a href="#magic">The Magic Square of Freudenthal</a> <br>
+<a href="#refer">References</a> <br>
+</p>
+  
+
+
+<P><B><a name="intro">Introduction</a></B> </P>
+
+<p>
+The main purpose of this page is to describe some things about octonions and
+the relation of integral octonions to the Zome system.
+Since the algebra of octonions is not associative, it can be difficult to get a handle on them.
+A goal of this page is to present the octonions is a modestly transparent
+manner.  The approach taken here is novel since we don't use subscripts
+or the Cayley-Dickson process.  We instead present the octonions
+as an 8-dimensional algebra with 3 generators {a,b,c} subject to some
+algebraic relations.
+</p>
+
+<p><b><a name="getti">Getting Acquainted</a></b></p>
+
+<p><center>
+<img src="images/8onions.jpg">
+</center></p>
+
+<p>
+The first thing to remember about the octonions <b>O</b> is that they comprise an algebra.
+This means first of all that <b>O</b> is a vector space satisfying all the 
+usual axioms of being a vector space, but also that this vector space also has
+an additional operation which for lack of a better term is called "octonion
+multiplication".  This multiplication operation must further satisfy the distributive
+law in order to be considered an algebra.  Remembering that the space of 
+octonions is an algebra is useful because it means that all we need to do
+in order to specify the multiplication is to give a basis for the octonions
+and then give a multiplication table for products of pairs from this basis.
+Notice that we have not imposed the axiom of associativity.  For this reason, a vector
+space equipped merely with a distributive multiplication rule is also called "non-associative",
+even though such an algebra may in fact be associative.
+</p>
+
+<p>
+Next, one should also try to remember that the octonions <b>O</b> represent a particular extension
+of the quaternions <b>H</b>, the quaternions represent a particular
+extension of the complex numbers <b>C</b>, and that the complex numbers represent a particular
+extension of the field of real numbers <b>R</b>.  In each of these extensions, the dimension
+of the succeeding algebra (as an algebra over the reals) is twice the dimension of
+the preceeding algebra, and the succeeding rule for multiplication is constructed using the preceeding
+rule for multiplication.  As it turns out, this construction, known as the Cayley-Dickson
+process, may be carried out indefinitely, so that one indeed has an infinite family of real
+algebras each having dimension 2<sup>n</sup>.
+</p>
+
+<p>
+As the reader has no doubt understood, he octonions comprise an 8-dimensional non-associative
+algebra which is truly not associative.  We are now ready to present a basis for <b>O</b>.
+It is thus:<br><br>
+<center>B={1,a,b,ab,c,ac,bc,(ab)c}.</center><br>
+The element 1 must commute with all the octonions and serve as an identity element.
+It is also useful to distinguish between purely real octonions, those which are real multiples
+of 1, and purely imaginary octonions, those which are linear combinations of the 7 octonions
+{a,b,ab,c,ac,bc,(ab)c}.
+Moreover, for some purposes which will arise later, we also postulate that the set B is orthonormal.
+Thus, we have decomposed <b>O</b> into an orthogonal direct sum of the 1-dimensional
+subspace of "real" octonions, distinguishable from the usual field of real numbers in name
+only, and the 7-dimensional subspace consisting of "pure imaginary" octonions.
+(I find the use of the words "real" and "imaginary" troublesome.  As
+far as I'm concerned, all numbers are imaginary!)
+</p>
+
+<p>
+We also describe the multiplication table of these basis vectors.  
+Part of this table has already been implied in the way that we
+write the particular elements of the basis B.  That is,
+one can probably guess that <br><br>
+<center> a&#183;b=ab </center><br>
+and that <br><br>
+<center> ab&#183;c=(ab)c </center><br>
+to give a couple examples.  One should not neglect the parentheses in the expression
+"(ab)c".  After all, we have already
+stated that the octonions are not associative, and it is certainly not true that (ab)c and 
+a(bc) represent the same octonion.  Indeed, these two octonions are negatives of each other.
+</p>
+
+<p>
+Here we illustrate how to obtain the octonion multiplication table using the elementary
+properties of the octonions.  We postulate that 1<sup>2</sup>=1
+and that <br><br>
+<center>a<sup>2</sup>=b<sup>2</sup>=c<sup>2</sup>=-1.</center><br>
+To get the squares of the remaining octonions, we must impose a few more rules.
+First we have a kind of skew-symmetry:  The
+octonion 1 commutes with everything and we also have<br><br>
+<center>ab+ba=ac+ca=bc+cb=0.</center><br>
+Next we have the alternative rule:  If x and y are any octonions, then <br><br>
+<center> x<sup>2</sup>&#183;y=x&#183;(xy).</center><br>
+Notice that the alternative rule is a weak form of associtivity.  It guarantees that
+any subalgebra of the octonions generated by just two octonions must be associative.
+(In fact, this last statement is equivalent to the alternative rule since our algebra
+has only 3 generators.)
+</p>
+
+<p>
+Using the axioms given so far, one can square many of the octonions.
+For example, we have <br><br>
+<center> (ab)<sup>2</sup>=abab=-a<sup>2</sup>b<sup>2</sup>=-1. </center><br>
+and similarly (ac)<sup>2</sup>=(bc)<sup>2</sup>=-1.  As a matter of fact, we can now say that any subalgebra
+generated by any two elements of {a,b,c} is isomorphic to the space of quaternions.  The next axiom
+we need is anti-associativity.  In order to define this, we must use the orthogonality of the basis
+given earlier.  Notice that any two of the octonions {a,b,c} generates an algebra isomorphic to
+the quaternions.  For example, the algebra generated by a and b is spanned by {1,a,b,ab}, and
+all four octonions {c,ac,bc,(ab)c} are orthogonal to this subalgebra.  This motivates
+the following definition:  We say that a triple T={x,y,z} of octonions comprise an "independent triple"
+if (a) the algebra generated by any two elements of T is isomorphic to the quaternions, and (b)
+the algebra generated by any two elements of T is orthogonal to the remaining element of T.
+For example, {a,b,c} is an independent triple, as are {a,b,bc}, {a,b,c+bc}, {ab,bc,(ab)c}, and so on.
+Now we can define anti-associativity:  For an independent triple {x,y,z}, one always has <br><br>
+<center>x(yz)=-(xy)z.</center><br>
+The octonions are postulated to have this property.
+</p>
+
+<p>
+We are now ready to write a multiplication table for the octonions.  We recall that the pure real octonion
+1 serves as an identity and spans the center of <b>O</b>, so we don't need to include it in the table.
+After working through the axioms presented thus far, one can obtain the following table:<br><br>
+<center>
+<table border=1 cellspacing=1 bordercolor=#000000 cellpadding=5>
+<tr align=center><td></td><td> <b>a</b></td><td>  <b>b</b></td><td>  <b>ab</b></td><td>  
+<b>c</b></td><td>  <b>ac</b></td><td>  <b>bc</b></td><td>  <b>(ab)c</b></td></tr>
+
+<tr align=center><td>  <b>a</b></td><td> -1</td><td>  ab</td><td>  
+-b</td><td>  ac</td><td>  -c</td><td>  -(ab)c</td><td>  bc</td></tr>
+
+<tr align=center><td>  <b>b</b></td><td> -ab</td><td>  -1</td><td>  
+a</td><td>  bc</td><td>  (ab)c</td><td>  -c</td><td>  -ac</td></tr>
+
+<tr align=center><td>  <b>ab</b></td><td> b</td><td>  -a</td><td>  
+-1</td><td>  (ab)c</td><td>  -bc</td><td> ac</td><td> -c</td></tr>
+
+<tr align=center><td>  <b>c</b></td><td> -ac</td><td>  -bc</td><td> 
+-(ab)c</td><td>  -1</td><td> a</td><td> b</td><td> ab</td></tr>
+
+<tr align=center><td>  <b>ac</b></td><td> c</td><td>  -(ab)c</td><td>  
+bc</td><td> -a</td><td> -1</td><td> -ab</td><td> b</td></tr>
+
+<tr align=center><td>  <b>bc</b></td><td> (ab)c</td><td>  c</td><td> 
+-ac</td><td> -b</td><td> ab</td><td> -1</td><td> -a</td></tr>
+
+<tr align=center><td>  <b>(ab)c</b></td><td> -bc</td><td>  ac</td><td> 
+c</td><td> -ab</td><td> -b</td><td> a</td><td> -1</td></tr>
+</table><br>
+<b>Figure 1.</b> The Octonion Multiplication Table. <br>
+</center><br>
+This table gives the product xy where x appears in the left-most column and y appears in the top row.
+For example, using the table, one can see that (ac)(ab)=bc.  The skew-symmetry of the octonion product
+should be clear from the table:  Ignoring the diagonal, the left-most column, and the top row, this
+table represents a skew-symmetric matrix.
+</p>
+
+
+
+<p><b><a name="actio">An Action by the Dihedral Group D<sub>6</sub></a></b></p>
+
+<p>
+We can now see an amusing consequence of the octonion axioms given so far,
+namely that there are 12 different ways to write the octonion (ab)c using all of the symbols
+in {a,b,c} exactly once each.  Certainly "(ab)c" is one of these expressions.  However,
+inside the parentheses of this expression is ab, which by skew-symmetry is identical
+to -ba.  Thus, we may write (ab)c=-(ba)c, arriving at a second way to write (ab)c.
+Using anti-associativity, one may also write (ab)c=-a(bc), giving a third equivalent
+expression.  In fact, the dihedral group D<sub>6</sub> of order 12 acts on these expressions.  Recall
+that D<sub>6</sub> may be presented by two involutions (also called reflections)
+whose composition has order 6.  These involutions are already apparent:  Let s be the
+operation which shifts the parentheses to the left or to the right.  Thus the operation
+translates the expression (xy)z into -x(yz) and vice-versa, no matter what x, y, and z are.  
+Next let t be the operation which
+switches the order of the factors inside the parentheses.  Thus, the operation t translates
+(xy)z into -(yx)z and vice-versa.  Then one can see that s and t each have order two and that
+the product st, acting on these expressions has order 6.  Explicitly, one may depict these 12 
+equivalent expressions with the following diagram: <br><br>
+<center>
+
+<svg
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="dihedral_symmetries.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="2.2271324"
+     inkscape:cx="375.14608"
+     inkscape:cy="611.77323"
+     inkscape:window-width="1648"
+     inkscape:window-height="969"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid824"
+       enabled="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="361.62853"
+       y="527.9967"
+       width="108.9013"
+       height="55.244393"
+       id="rect62443" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g25725"
+       transform="translate(-6.534,1.188)">
+      <path
+         style="fill:#ffffff;stroke:#c50000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 108.25317,162.5 95.262794,185"
+         id="path1716" />
+      <path
+         style="fill:#ffffff;stroke:#0000f7;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 108.25317,162.5 v 26"
+         id="path2028" />
+      <path
+         style="fill:#ffffff;stroke:#c50000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 108.25317,162.5 121.24355,185"
+         id="path2223" />
+      <path
+         style="fill:#ffffff;stroke:#0000f7;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 108.25317,162.5 v -26"
+         id="path2338" />
+      <path
+         style="fill:#ffffff;stroke:#0000f7;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 108.25317,162.5 22.51666,13"
+         id="path2453" />
+      <path
+         style="fill:#ffffff;stroke:#c50000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 108.25317,162.5 h 25.98077"
+         id="path2568" />
+      <path
+         style="fill:#ffffff;stroke:#c50000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 82.272411,162.5 H 108.25317"
+         id="path2570" />
+      <path
+         style="fill:#ffffff;stroke:#c50000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 95.262794,140 12.990376,22.5"
+         id="path2572" />
+      <path
+         style="fill:#ffffff;stroke:#0000f7;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 85.736514,175.5 22.516656,-13"
+         id="path2574" />
+      <path
+         style="fill:#ffffff;stroke:#0000f7;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 85.736514,149.5 22.516656,13"
+         id="path2576" />
+      <path
+         style="fill:#ffffff;stroke:#c50000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 121.24355,140 -12.99038,22.5"
+         id="path2578" />
+      <path
+         style="fill:#ffffff;stroke:#0000f7;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 130.76983,149.5 -22.51666,13"
+         id="path2580" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="115.75291"
+       y="159.98656"
+       id="text50405"><tspan
+         sodipodi:role="line"
+         id="tspan50403"
+         style="stroke-width:0.264583"
+         x="115.75291"
+         y="159.98656">(ab)c</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text62441"
+       style="stroke-linecap:round;fill:#000000;-inkscape-font-specification:'CMU Serif, Medium';font-family:'CMU Serif';font-size:12px;stroke-linejoin:round;font-weight:500;stroke:none;stroke-width:0.99999869;stroke-opacity:1;fill-opacity:1;white-space:pre;shape-inside:url(#rect62443)" />
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="92.400902"
+       y="184.58659"
+       id="text102340"><tspan
+         sodipodi:role="line"
+         id="tspan102338"
+         style="stroke-width:0.264583"
+         x="92.400902"
+         y="184.58659">(bc)a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="83.565948"
+       y="150.92464"
+       id="text104632"><tspan
+         sodipodi:role="line"
+         id="tspan104630"
+         style="stroke-width:0.264583"
+         x="83.565948"
+         y="150.92464">(ca)b</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="77.194717"
+       y="159.98656"
+       id="text110626"><tspan
+         sodipodi:role="line"
+         id="tspan110624"
+         style="stroke-width:0.264583"
+         x="77.194717"
+         y="159.98656">-c(ab)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="112.27868"
+       y="150.92464"
+       id="text113662"><tspan
+         sodipodi:role="line"
+         id="tspan113660"
+         style="stroke-width:0.264583"
+         x="112.27868"
+         y="150.92464">-a(bc)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="102.78645"
+       y="184.58659"
+       id="text116832"><tspan
+         sodipodi:role="line"
+         id="tspan116830"
+         style="stroke-width:0.264583"
+         x="102.78645"
+         y="184.58659">-b(ca)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="115.36767"
+       y="169.073"
+       id="text124892"><tspan
+         sodipodi:role="line"
+         id="tspan124890"
+         style="stroke-width:0.264583"
+         x="115.36767"
+         y="169.073">-(ba)c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="77.683067"
+       y="169.073"
+       id="text128240"><tspan
+         sodipodi:role="line"
+         id="tspan128238"
+         style="stroke-width:0.264583"
+         x="77.683067"
+         y="169.073">c(ba)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="103.26238"
+       y="145.35378"
+       id="text129740"><tspan
+         sodipodi:role="line"
+         id="tspan129738"
+         style="stroke-width:0.264583"
+         x="103.26238"
+         y="145.35378">a(cb)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="92.101692"
+       y="145.35378"
+       id="text131164"><tspan
+         sodipodi:role="line"
+         id="tspan131162"
+         style="stroke-width:0.264583"
+         x="92.101692"
+         y="145.35378">-(ac)b</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="112.8205"
+       y="179.25566"
+       id="text132596"><tspan
+         sodipodi:role="line"
+         id="tspan132594"
+         style="stroke-width:0.264583"
+         x="112.8205"
+         y="179.25566">b(ac)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       x="83.138069"
+       y="179.25566"
+       id="text138272"><tspan
+         sodipodi:role="line"
+         id="tspan138270"
+         style="stroke-width:0.264583"
+         x="83.138069"
+         y="179.25566">-(cb)a</tspan></text>
+  </g>
+</svg>
+<br>
+<b>Figure 2.</b>  Expressions Equivalent to (ab)c. <br>
+</center><br>
+This diagram clearly exhibits the action of the dihedral group D<sub>6</sub>, with the lines s and t serving
+as the generating mirrors.
+As it turns out, the appearance of the dihedral group D<sub>6</sub> has signficance.  It is the Weyl group
+for the exceptional 14-dimensional simple Lie algebra g<sub>2</sub>. 
+</p>
+
+
+
+<p><b><a name="fanop">The Fano Plane</a></b></p>
+
+<p>
+It is generally tiresome to build, study, and refer to a multiplication table, and fortunately there are 
+more geometrically-inspired devices for studying the octonions.  In particular, 
+one may use the Fano plane (also known as the projective plane over the two-element field GF<sub>2</sub>)
+as a mnemonic for reproducing the octonion multiplication table.  Recall that <b>O</b> is
+8-dimensional with a center spanned by the octonion 1, so all we really need to know is how
+to multiply two pure imaginary quaternions from the set {a,b,ab,c,ac,bc,(ab)c}.  Here is one way
+to depict this device: <br><br>
+<center>
+
+<svg
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1615"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1617"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.55678311"
+     inkscape:cx="396.02494"
+     inkscape:cy="561.25984"
+     inkscape:window-width="1312"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1612" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g22761"
+       transform="translate(22.793,25.603667)">
+      <circle
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path22149"
+         cx="79.375"
+         cy="127"
+         r="10.583333" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 79.374999,127 -9.260417,-5.29167"
+         id="path22566" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 79.374999,105.83333 -9.260417,15.875"
+         id="path22568" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 60.854166,137.58333 9.260416,-15.875"
+         id="path22570" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 79.374999,127 9.260417,-5.29167"
+         id="path20568" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 79.374999,127 v 10.58333"
+         id="path20763" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 79.374999,127 V 105.83333"
+         id="path20878" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 79.374999,105.83333 9.260417,15.875"
+         id="path20993" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 88.635416,121.70833 9.260416,15.875"
+         id="path21130" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 79.374999,137.58333 H 97.895832"
+         id="path21325" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 60.854167,137.58333 H 79.375"
+         id="path21325-1" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 79.374999,127 18.520833,10.58333"
+         id="path21520" />
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 79.374999,127 60.854166,137.58333"
+         id="path21936" />
+      <g
+         id="g17819"
+         transform="translate(-35.718745,6.6145833)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309"
+           cx="105.83333"
+           cy="115.09375"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="104.14584"
+           y="116.17741"
+           id="text8039"><tspan
+             sodipodi:role="line"
+             id="tspan8037"
+             style="stroke-width:0.265"
+             x="104.14584"
+             y="116.17741">ab</tspan></text>
+      </g>
+      <g
+         id="g17814"
+         transform="translate(-31.749997,37.041662)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309-9"
+           cx="92.604164"
+           cy="100.54167"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="91.754608"
+           y="101.23542"
+           id="text2483"><tspan
+             sodipodi:role="line"
+             id="tspan2481"
+             style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.265"
+             x="91.754608"
+             y="101.23542">a</tspan></text>
+      </g>
+      <g
+         id="g17794"
+         transform="translate(23.812504,2.6458333)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309-7"
+           cx="55.562496"
+           cy="103.1875"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="54.691235"
+           y="104.27116"
+           id="text5919"><tspan
+             sodipodi:role="line"
+             id="tspan5917"
+             style="stroke-width:0.265"
+             x="54.691235"
+             y="104.27116">b</tspan></text>
+      </g>
+      <g
+         id="g17799"
+         transform="translate(47.625005,9.2604116)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309-2"
+           cx="50.270828"
+           cy="128.32292"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="49.557697"
+           y="129.01668"
+           id="text7045"><tspan
+             sodipodi:role="line"
+             id="tspan7043"
+             style="stroke-width:0.265"
+             x="49.557697"
+             y="129.01668">c</tspan></text>
+      </g>
+      <g
+         id="g17824"
+         transform="translate(-38.364578,38.364583)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309-0"
+           cx="117.73958"
+           cy="99.21875"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="116.2203"
+           y="99.912506"
+           id="text9225"><tspan
+             sodipodi:role="line"
+             id="tspan9223"
+             style="stroke-width:0.265"
+             x="116.2203"
+             y="99.912506">ac</tspan></text>
+      </g>
+      <g
+         id="g17804"
+         transform="translate(11.906253,-13.229167)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309-3"
+           cx="76.729164"
+           cy="134.9375"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="75.102135"
+           y="136.02115"
+           id="text10577"><tspan
+             sodipodi:role="line"
+             id="tspan10575"
+             style="stroke-width:0.265"
+             x="75.102135"
+             y="136.02115">bc</tspan></text>
+      </g>
+      <g
+         id="g17809"
+         transform="translate(17.197922,-22.489578)">
+        <circle
+           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+           id="path17309-27"
+           cx="62.177078"
+           cy="149.48958"
+           r="2.6458333" />
+        <text
+           xml:space="preserve"
+           style="font-weight:500;font-size:3.175px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif, Medium';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+           x="61.496506"
+           y="150.17404"
+           id="text12261"><tspan
+             sodipodi:role="line"
+             id="tspan12259"
+             style="stroke-width:0.265"
+             x="61.496506"
+             y="150.17404">z</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
+<b>Figure 3.</b>  The Fano Plane Endowed with Octonions.<br>
+</center><br>
+Notice that this diagram has 7 points and through these points are a collection of segments and
+one circle.  These other objects are intended to depict the 3-element lines of the Fano plane.
+Notice that the bounding triangle has 3 segments with three points on each, 3 segments joining
+a vertex of the bounding triangle to a point on the opposite side, each with 3 points, and a circle
+inscribed in the bounding triangle, again passing through exactly 3 points.  The variational
+placement of the lines and circle are basically arbitrary.  All we need to do, given these 7 points,
+is find a way to depict a collection of 7 subsets consisting of 3 points each in such a way that
+each point lies in exactly 3 of these subsets.  Looking at the diagram, one can quickly check
+that each point lies on exactly 3 of these lines.  (One should also verify that this is essentially
+only one way to do this.)
+</p>
+
+<p>
+Clearly the points of the Fano plane are labeled by pure imaginary octonions.  The arrows say something
+about how to multiply them.  Notice that the octonions on each line comprise an associative triple.  Thus, if
+the triple {x,y,z} comprises a line, then the set {1,x,y,z} spans an algebra isomorphic to the quaternions, 
+and one has either xy=z or yx=z.  If one has xy=z, then, cycling the three symbols, one also
+has the relations yz=x and zx=y.  The same can be said if yx=z, namely that this implies xz=y and zy=x.
+The arrows are intended to eliminate the ambiguity about whether one has xy=z or yz=x.  For example,
+notice that there is a line consisting of the points {a,bc,(ab)c}.  In this case there is an arrow pointing 
+from bc to a, indicating that (bc)a=(ab)c and, again by cycling, that [(ab)c](bc)=a
+and a[(ab)c]=bc.  If one desires to become familiar with the octonions, it is instructive
+to derive this diagram from scratch and to study what happens to the arrows when some of the octonions
+are permuted.
+</p>
+
+
+
+<p><b><a name="excep">The Exceptional Lie Algebra g<sub>2</sub></a></b></p>
+
+
+<p>
+The automorphism group of the octonions, as presented here, is a real compact simple 14-dimensional
+Lie group known as G<sub>2</sub>, and, correspondingly, the derivation algebra of the octonions
+is a simple 14-dimensional Lie algebra known as g<sub>2</sub>.  (For the octonions, a map
+f:<b>O</b> --> <b>O</b> is an automorphism if f(xy)=f(x)f(y) for all x,y and is a
+derivation if f(xy)=xf(y)+f(x)y for all x,y.  Looking at the way we have defined
+<b>O</b>, one should observe the strength of these conditions:  They are completely determined
+by they way they act on the generators {a,b,c}.)   Here we will see how to construct
+the Lie algebra g<sub>2</sub> as a set of derivations on <b>O</b>.  This construction
+conveniently yields the compact form of g<sub>2</sub> as a Lie subalgebra of the orthogonal Lie algebra
+so(7).
+</p>
+
+For each octonion x, define a map by <br><br>
+<center> C<sub>x</sub>(y)=[x,y]=xy-yx. </center></br>
+The map C<sub>x</sub> is not a derivation, but it is an endomorphism of <b>O</b>.
+Given a pair A, B of endomorphisms, one may unambiguously define their Lie bracket as <br><br>
+<center>[A,B]=A&#186;B-B&#186;A.</center><br>
+Define another map by <br><br>
+<center> D<sub>x,y</sub>=[C<sub>x</sub>,C<sub>y</sub>]+C<sub>[x,y]</sub>,</center><br>
+where x and y are octonions, and the meanings of both sets of square brackets
+are implied above.  It takes a little bit of work, but one can show that D<sub>x,y</sub>
+is always a derivation of <b>O</b> when x and y are pure imaginary octonions, and that
+every derivation arises in this way.
+</p>
+
+<p>Since the space
+of pure imaginary octonions is 7-dimensional and the derivation D<sub>x,y</sub> is
+clearly skew-symmetric in the variables x and y, we see that we appear to have a total 
+of 21 derivations of <b>O</b>.  As it turns out, a few of these are redundant.  There
+are a total of 7 independent relations among all these derivations.  One can see these
+as follows:  Notice that given any element x of our standard basis {a,b,ab,c,ac,bc,(ab)c}
+for the imaginary octonions, there are precisely 3 ways to write x as a product of
+pairs of the remaining 6.  For example, one may write <br><br>
+<center>ab=a&#183;b=bc&#183;ac=c&#183;(ab)c. </center><br>
+Each such identity yields a distinct relation.  For this one, we get <br><br>
+<center> D<sub>a,b</sub>+D<sub>bc,ac</sub>+D<sub>c,(ab)c</sub>=0.</center><br>
+Thus, the kernel of this map D has dimension at least 7 and the image is a
+Lie algebra of derivations of dimension at most 14.  It takes only a little more
+work to show that the kernel has dimension exactly 7, so that the dimension of
+the space of derivations is 14.  One still has to check simplicity, although this
+is not too much work....
+</p>
+
+<p><b><a name="hammi">The Hamming Code and Gosset's Lattice</a></b></p>
+
+<p>
+The Hamming [8,4,4] code H<sub>8</sub> is distinguished in coding theory as being one
+of the simplest examples of a perfect code, meaning that its covering radius
+is equal to its packing radius. 
+It may be constructed using octonions as follows:  
+First we change the base field from the reals to the two-element field GF<sub>2</sub>.
+Thus, our space of octonions, while still 8-dimensional, has only 2<sup>8</sup>=256 vectors,
+and each of these corresponds naturally to a subset of our basis B={1,a,b,ab,c,ac,bc,(ab)c}.
+The Hamming code H<sub>8</sub> is a linear code, meaning that
+it is a vector space, so all we need to do is give a spanning set.
+</p>
+
+<p>
+The following describes one way to get a spanning set:  First we include the vector <br><br>
+<center>1+a+b+ab+c+ac+bc+(ab)c,</center><br>
+the vector corresponding the entire set B.
+Next we look again at the Fano plane.  Recall that the Fano plane has 7 lines,
+with elements of B on each line.  Thus, for each line, there
+are four elements, say {w,x,y,z}, which are not on this line.  In addition to the vector
+described above, our spanning set for H<sub>8</sub> also includes those vectors <br><br>
+<center>w+x+y+z</center><br>
+for which the complement of {w,x,y,z} comprise a collinear triple of octonion basis vectors.
+For example, {a,b,ab} comprise the octonions on one of the seven lines, so we include the octonion <br><br>
+<center>c+ac+bc+(ab)c</center><br>
+in our spanning set.
+</p>
+
+<p>
+Altogether, we have seen a total of 8 vectors in our spanning set for the Hamming code H<sub>8</sub>,
+the vector which is the sum of all the octonion basis vectors and another for each of the 7 lines
+in the Fano plane.
+One can quickly check that exactly four of these are redundant, so one can see that our Hamming code
+is a 4-dimensional vector space over the 2-element field.  If one defines the weight of a vector
+to be the number of terms (or the cardinality of the associated set), 
+then one can quickly see that there is one vector with weight 0, 14
+vectors with weight 4, and 1 vector with weight 8.
+</p>
+
+<p>
+Since -1 and 1 represent the same element GF<sub>2</sub>, our space of octonions using this coefficient field
+is in fact associative.  Switching back to using the real numbers yields 
+Gosset's famous 8-dimensional lattice E<sub>8</sub>, corresponding the densest
+packing of spheres in 8-dimensional space.  Recall that we have all
+those 14 codewords of weight four given above.  If you will indulge in some numerology, you will notice
+that <br><br>
+<center> 16&#183;14+16=240,</center><br>
+and there are precisely 240 roots in the E<sub>8</sub> lattice.  This is not a coincidence.
+As it turns out, when we change the field from the 2-element field back to the real numbers,
+we can use these 14 codewords to generate this lattice.  We do this as follows:  Suppose w+x+y+z is one of the code
+words of weight 4 described above.  Then we decree that the octonion <br><br>
+<center>&#189;(&#177;w &#177;x &#177;y &#177;z)</center><br>
+is a root vector for E<sub>8</sub>.  Counting all of these, this gives us a total of 16&#183;14
+vectors.  Explicitly, these are: <br><br>
+<center>
+&#189;(&#177;1 &#177;a &#177;b &#177;ab), &#189;(&#177;c &#177;ac &#177;bc &#177;(ab)c),<br>
+&#189;(&#177;1 &#177;a &#177;c &#177;ac), &#189;(&#177;b &#177;ab &#177;bc &#177;(ab)c),<br>
+&#189;(&#177;1 &#177;b &#177;c &#177;bc), &#189;(&#177;a &#177;ab &#177;ac &#177;(ab)c),<br>
+&#189;(&#177;1 &#177;a &#177;bc &#177;(ab)c), &#189;(&#177;b &#177;ab &#177;c &#177;ac),<br>
+&#189;(&#177;1 &#177;b &#177;ac &#177;(ab)c), &#189;(&#177;a &#177;ab &#177;c &#177;bc),<br>
+&#189;(&#177;1 &#177;c &#177;ab &#177;(ab)c), &#189;(&#177;a &#177;b &#177;ac &#177;bc),<br>
+&#189;(&#177;1 &#177;ab &#177;ac &#177;bc), &#189;(&#177;a &#177;b &#177;c &#177;(ab)c).<br>
+</center><br>
+The remaining 16 are the octonions <br><br>
+<center>&#177;1, &#177;a, &#177;b, &#177;ab, &#177;c, &#177;ac, &#177;bc, &#177;(ab)c.</center><br>
+</p>
+
+
+
+<p>
+So we have described a total of 240 octonions which may or may not have any geometric signifigance
+whatsoever.  However, one can fit 8 of these octonions (in more than one way)
+into the E<sub>8</sub> Coxeter diagram:<br><br>
+<center>
+<img src="images/kirmseintegers.gsp.jpg"><br>
+<b>Figure 4.</b>  The E<sub>8</sub> Root System.<br>
+</center><br>
+Thus, the 8 octonions appearing in the Coxeter diagram yield 8 reflections generating a 
+group of orthogonal transformations isomorphic to the Coxeter group for this root system.
+One can check that the orbit of these 8 octonions under this group action is the set
+of 240 roots given above.
+</p>
+
+<p><b><a name="integ">Integral Octonions</a></b></p>
+
+<p>
+Naturally this is not the only way to construct the E<sub>8</sub> lattice from the octonions.
+The symmetric group of degree 8 apparently acts on the coordinates, and since we found
+only 14 codewords with weight 4, we know that we haven't found all of the subspaces of
+<b>O</b> which are isomorphic to the Hamming Code H<sub>8</sub>.  (Notice that 
+<sub>8</sub>C<sub>4</sub>=70, which is signifigcantly greater than 14.)  This leads
+to Johannes Kirmse's mistake, a published statement that the lattice generated by
+the 240 octonions described above is closed under multiplication.  Despite the fact that
+it's easy to take a few of these and multiply them together in order to disprove Kirmse's assertion,
+it's an easy mistake to make.
+After all, this construction presented here has a lot of symmetry, so it seems that there should
+be no alternative that they be closed under multiplication.  Alas for Kirmse, it is not so.
+</p>
+
+<p>
+In spite of Kirmse's mistake, there are some interesting "integral" rings associated with this 
+lattice.  In fact, one can perform an orthogonal transformation on Kirmse's "integers" in such a way
+that the image is a non-associative ring.  Recall that each octonion is a linear combination of
+the octonions {1,a,b,ab,c,ac,bc,(ab)c}.  Choosing x to be one of the pure imaginary octonions
+in this set, one obtains one of these rings by interchanging 1 and x, and leaving the remaining
+6 basis octonions fixed.  Evidently the 16 octonions
+&#177;x, with x being a basis octonion, always lies in this ring.  This interchange operation affects only
+the remaining 224 octonions.  For example, if we interchange 1 with a, we obtain the
+224 octonions: <br><br>
+<center>
+&#189;(&#177;1 &#177;a &#177;b &#177;ab), &#189;(&#177;c &#177;ac &#177;bc &#177;(ab)c),<br>
+&#189;(&#177;1 &#177;a &#177;c &#177;ac), &#189;(&#177;b &#177;ab &#177;bc &#177;(ab)c),<br>
+&#189;(&#177;a &#177;b &#177;c &#177;bc), &#189;(&#177;1 &#177;ab &#177;ac &#177;(ab)c),<br>
+&#189;(&#177;1 &#177;a &#177;bc &#177;(ab)c), &#189;(&#177;b &#177;ab &#177;c &#177;ac),<br>
+&#189;(&#177;a &#177;b &#177;ac &#177;(ab)c), &#189;(&#177;1 &#177;ab &#177;c &#177;bc),<br>
+&#189;(&#177;a &#177;c &#177;ab &#177;(ab)c), &#189;(&#177;1 &#177;b &#177;ac &#177;bc),<br>
+&#189;(&#177;a &#177;ab &#177;ac &#177;bc), &#189;(&#177;1 &#177;b &#177;c &#177;(ab)c).<br>
+</center><br>
+These 240 octonions serve as the units in a ring whose elements correspond naturally to Gosset's
+lattice.  
+</p>
+
+<p>
+It is a remarkable fact that
+each of the 7 rings obtained in this way is maximal with respect to a certain integrality condition.
+In order to begin to discuss this condition, we need to define the conjugate and norm of an octonion.  It goes the
+same way as it does for complex numbers and quaternions:  If x+y is an octonion, where x is pure real and y is
+pure imaginary, then the conjugate is x-y.  The norm of the octonion x+y is then defined to be the
+real octonion<br><br>
+<center>N(x+y)=(x+y)(x-y).</center><br>
+Every octonion x+y then satisfies a quadratic equation <br><br>
+<center>z<sup>2</sup>-2xz+N(x+y)=0.</center><br>
+For each of the 7 rings described above, the coefficients in this equation are all ordinary integers,
+and they are all maximal with respect to this condition.  That is, if one extends any one of them
+to a larger subring of <b>O</b>, then the coefficients in this quadratic equation may fail to be integers.
+</p>
+
+<p><b><a name="magic">The Magic Square of Freudenthal</a></b></p>
+
+I'm sorry, but I still don't understand this completely.  Apparently one can use the octonions to build
+all five of the exceptional complex simple Lie algebras, not just g<sub>2</sub>.  The easiest of the others
+is probably the construction of the 52-dimensional Lie algebra f<sub>4</sub> using an exceptional Jordan 
+algebra.  The article by Baez and
+the book by Schafer also have descriptions of these constructions.
+(For that matter, one can find <i>most</i> of this stuff elsewhere....)
+
+<p><b><a name="refer">References</a></b><p>
+
+<p>
+John Baez.  The Octonions.  <i>Bulletin of the American Mathematical Society (New Series).</i>
+Volume 39, Number 2, (2002), Pages 145-205.<br>
+(Also available <a href="http://math.ucr.edu/home/baez/octonions/">online</a>.)
+</p>
+
+<p>
+J. H. Conway and N. J. A. Sloane. 
+<i>Sphere Packings, Lattices and Groups.</i> 3rd ed. Springer-Verlag, New York, 1999. 
+</p>
+
+<p>
+H. S. M. Coxeter.  Integral Cayley Numbers.  <i> Duke Mathematical Journal. </i>
+Vol. 13, Number 4, (1946), 561-578.
+</p>
+
+
+<p>
+Richard D. Schafer.  <i>An Introduction to Nonassociative Algebras.</i>
+Dover Publications, Inc., New York, 1994.
+</p>
+
+
+<HR>
+<A href="http://homepages.wmich.edu/~drichter/">Home</A> 
+<HR>
+</BODY></HTML>

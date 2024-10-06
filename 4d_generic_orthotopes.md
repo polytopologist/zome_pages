@@ -1,15 +1,26 @@
+
+Since every face of a floral vertex is floral, we should acquaint ourselves with 3-dimensional floral vertices before considering 4-dimensional floral vertices.  Up to congruence, there are precisely four types of 3-dimensional floral vertices.  These appear in the [reference](https://arxiv.org/abs/2210.12012), and we may also use vZome to visualize them:
 ---
 title:  The 24-Cell and its Snub
 layout: default
 ---
 
+
+<script type="module" src="https://www.vzome.com/modules/vzome-viewer.js"></script>
+
 ## **Generic Orthotopes**
 
 ### Introduction
 
-On this page we use Scott Vorthmann's vZome software to visualize floral vertices in dimensions 3 and 4 and display an example of a 4-dimensional generic orthotope.  We can trace the origin of generic orthotopes to the Zome System, so it is quite natural to use vZome to visualize them.
 
-We presume that you are reading this because you are curious about generic orthotopes.  If you haven't already done so, then you should download and peruse the [reference](https://arxiv.org/abs/2210.12012).  This page was conceived as a companion to that work.  We also expect that a Zometool user understands that a "zone" in a vector space is a partition of the space into mutually parallel lines.  For example, it is an important feature of its design that every connected Zometool model uses at most 31 zones (61 if one also uses green struts).  In the shapes shown below, we don't need more than 4 zones.  We are fortunate that we may choose 4 yellow zones arranged to have octahedral symmetry.  For example, this symmetry is apparent in the all-yellow shadow of the 4-dimensional cube:
+This page is about generic orthotopes in dimensions 3 and 4.  If you haven't already done so, then you should download and peruse 
+the [reference](https://arxiv.org/abs/2210.12012).  This page was conceived as a companion to that work.  
+In particular, we use Scott Vorthmann's software vZome to visualize 3- and 4-dimensional floral vertices and display an 
+example of a 4-dimensional generic orthotope.  We can trace the origin of generic orthotopes to the Zome System, so it 
+is quite natural to use vZome to visualize them.
+
+There are some prerequisites to understanding this page.
+We expect that a reader understands that a "zone" in a vector space is a partition of the space into mutually parallel lines.  For example, it is an important feature of its design that every connected Zometool model uses at most 31 zones (61 if one also uses green struts).  In the shapes shown below, we don't need more than 4 zones.  We are fortunate that we may choose 4 yellow zones arranged to have octahedral symmetry.  For example, this symmetry is apparent in the all-yellow shadow of the 4-dimensional cube:
 
 <figure style="width: 87%; margin: 5%">
  <vzome-viewer style="width: 100%; height: 60vh"
@@ -34,8 +45,7 @@ A corollary to these properties of floral tangent cones is that every face and e
 Since every face of a floral vertex is floral, we should acquaint ourselves with 3-dimensional floral vertices before considering 4-dimensional floral vertices.  Up to congruence, there are precisely four types of 3-dimensional floral vertices.  These appear in the [reference](https://arxiv.org/abs/2210.12012), and we may also use vZome to visualize them:
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
- <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
+<vzome-viewer style="width: 100%; height: 60dvh" 
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-37-26-3dflower1/3dflower1.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-37-26-3dflower1/3dflower1.png" >
@@ -46,7 +56,6 @@ Since every face of a floral vertex is floral, we should acquaint ourselves with
 </figure>
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-38-38-3dflower3/3dflower3.vZome" >
    <img  style="width: 100%"
@@ -58,8 +67,7 @@ Since every face of a floral vertex is floral, we should acquaint ourselves with
 </figure>
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
- <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
+<vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-39-13-3dflower5/3dflower5.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-39-13-3dflower5/3dflower5.png" >
@@ -70,8 +78,7 @@ Since every face of a floral vertex is floral, we should acquaint ourselves with
 </figure>
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
- <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
+<vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-39-32-3dflower7/3dflower7.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/07-39-32-3dflower7/3dflower7.png" >
@@ -166,69 +173,66 @@ We presume the reader is acquainted with this kind of drawing.  It is supposed t
 
 We make some observations in the interests of dimensional analogy.  Notice that the drawing above represents a subdivision of the plane into polygonal regions where (a) we use precisely 3 zones in the plane, (b) each polygonal region uses only 2 zones, and (c) there are three rays pointing along the coordinate axes towards the point at infinity.  In particular, notice that every 2-dimensional face is a 2-dimensional generic othogon and that there are three "types" of such orthogon, each lacking one of the 3 zones.  Picking two coordinate axes, we see that they are part of the boundary of an orthogon.  The analogous versions of these hold for 4-dimensional generic corner orthtopes.  Thus, in 4 dimensions we should expect a "sculptural" subdivision of 3-dimensional space into 3-dimensional regions which are each a linearly distorted 3-dimensional generic orthotopes.  Each of these 3-dimensional faces must use precisely 3 zones and we can distinguish these according to which of the 4 zones these lack.  Moreover, we should be able to identify the shadows of the coordinate axes as four lines pointing away towards the point at infinity.  And so on.
 
-We also notice that a drawing an axonometric drawing of a 3-dimensional floral vertex has an ambiguity, and we presume the reader is acquainted with this ambiguity.  For example, a drawing of a single-octant floral vertex could just as well represent a drawing of the 7-octant floral vertex.  That is, it is impossible to determine whether the vertex points outward or inward.  There is a similar duality between axonometric drawings of the 3-octant and the 5-octant floral vertices.  Another way to observe this is that there are only two congruence classes of *boundaries* of 3-dimensional floral vertices.  In the terminlogy in the reference, this is reflected in the conjunctive-disjunctive duality; if v is a conjunctive floral vertex (i.e. a cartesian product of lesser floral vertices), then the complementary arrangement is a disjunctive floral vertex; conversely, if v is disjunctive, then the complement of v is conjunctive.
+We also notice that an axonometric drawing of a 3-dimensional floral vertex has an ambiguity, and we presume the reader is acquainted with this ambiguity.  For example, a drawing of a single-octant floral vertex could just as well represent a drawing of the 7-octant floral vertex.  That is, it is impossible to determine whether the vertex points outward or inward.  There is a similar duality between axonometric drawings of the 3-octant and the 5-octant floral vertices.  Another way to observe this is that there are only two congruence classes of *boundaries* of 3-dimensional floral vertices.  In the terminlogy in the reference, this is reflected in the conjunctive-disjunctive duality; if v is a conjunctive floral vertex (i.e. a cartesian product of lesser floral vertices), then the complementary arrangement is a disjunctive floral vertex; conversely, if v is disjunctive, then the complement of v is conjunctive.
+
+
 
 ### Boundaries of 4D Floral Vertices
 
 Up to congruence, there are precisely ten types of 4-dimensional floral vertices.  These were described in the [reference](https://arxiv.org/abs/2210.12012)).  Because we are "sculpting" these in 3 dimensions, these come in five conjunctive/disjunctive dual pairs.  That is, up to equivalence, there are precisely five *boundaries* of 4-dimensional floral vertices.  We show these below:
 
 <figure style="width: 87%; margin: 5%"> 
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
- <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
+<vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-33-15-4dflower1/4dflower1.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-33-15-4dflower1/4dflower1.png" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption style="text-align: center;">
     The boundary of either a 1- or 15-orthant 4D floral vertex.
  </figcaption>
 </figure>
 
 <figure style="width: 87%; margin: 5%"> 
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-33-31-4dflower3/4dflower3.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-33-31-4dflower3/4dflower3.png" >
  </vzome-viewer>
- <figcaption style="text-align: center>
+ <figcaption style="text-align: center">
     The boundary of either a 3- or 13-orthant 4D floral vertex.
  </figcaption>
 </figure>
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-34-45-4dflower5/4dflower5.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-34-45-4dflower5/4dflower5.png" >
  </vzome-viewer>
- <figcaption style="text-align: center>
+ <figcaption style="text-align: center;">
     The boundary of either a 5- or 11-orthant 4D floral vertex.
  </figcaption>
 </figure>
 
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-34-57-4dflower7/4dflower7.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-34-57-4dflower7/4dflower7.png" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption style="text-align: center;">
     The boundary of either a 7- or 9-orthant 4D floral vertex.
  </figcaption>
 </figure>
 
 <figure style="width: 87%; margin: 5%"> 
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
  <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-35-11-4dflower9/4dflower9.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-35-11-4dflower9/4dflower9.png" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption style="text-align: center;">
     The boundary of either a 9- or 7-orthant 4D floral vertex.
  </figcaption>
 </figure>
@@ -244,13 +248,12 @@ For example, consider the 4D floral vertex boundary for the pair with 5 or 11 or
 At long last, it is time to see a 4-dimensional generic corner orthotope:
 
 <figure style="width: 87%; margin: 5%">
- <div style='display:flex;'><div style='margin: auto;'><vzome-viewer-previous label='prev step'></vzome-viewer-previous><vzome-viewer-next label='next step'></vzome-viewer-next></div></div>
- <vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
+<vzome-viewer style="width: 100%; height: 60dvh" indexed='true'
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-39-20-universal00/universal00.vZome" >
    <img  style="width: 100%"
        src="https://polytopologist.github.io/vzome-sharing/2024/07/30/08-39-20-universal00/universal00.png" >
  </vzome-viewer>
- <figcaption style="text-align: center; font-style: italic;">
+ <figcaption style="text-align: center; font-style:">
     A 4-dimensional generic corner orthotope
  </figcaption>
 </figure>
