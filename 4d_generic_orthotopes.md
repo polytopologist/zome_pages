@@ -98,6 +98,7 @@ We use dimensional analogy to help understand our visualization of 4-dimensional
 
 Here is a 2-dimensional drawing of a 3-dimensional generic corner orthotope:
 
+{::nomarkdown}
 <figure style="width: 60%; margin: 5%">
 <svg
    width=100%
@@ -168,6 +169,8 @@ Here is a 2-dimensional drawing of a 3-dimensional generic corner orthotope:
     A drawing of 3-dimensional generic corner orthotope.
  </figcaption>
  </figure>
+{:/}
+
 
 We presume the reader is acquainted with this kind of drawing.  It is supposed to suggest a solid orthogonal polytope resting snugly against the three coordinate hyperplanes in 3-dimensional space, lying entirely within the primary octant of 3-dimensional Euclidean space (where all coordinates are non-negative).  It is also an example of a generic orthotope, as all of its singular points are floral vertices; to verify, notice that every vertex of this solid is congruent to one of the four floral vertices depicted above.
 
