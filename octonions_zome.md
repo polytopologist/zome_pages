@@ -4,6 +4,7 @@
 
 If you are reading this, then you probably already understand that Zometool is very good at modeling 4-dimensional polytopes in the H(4) symmetry family.  You probably also know that the Zome System existed before Zometool and that Zometool was invented because of this connection to H(4) polytopes.  However, as I hope this essay will explain, it also means that you have acquainted yourself with integral octonions.
 
+
 You might have heard that octonions "explain" a lot of "exceptional" or other weird phenomena in algebra, geometry, and/or topology.  This is all true, but, as we shall see here, we may also include the Zome Canon in this list.  Geometrically, the integral octonions comprise a lattice in 8-dimensional space, known in various places as the Gosset-Korkine-Zolotarev lattice or simply the E(8) lattice.  Every connected Zometool model is a shadow of a subset of the E(8) lattice.  We get a hint about this from the Zometool model of Gosset's semiregular 8-dimensional polytope [link or photo].
 
 This is some of the weirdest (and most weirdly beautiful) math ever conceived by humans and you should regard yourself as lucky if you can grasp all of this.  I find it a sad fact that most people will never even glimpse this abstract gemstone. 
