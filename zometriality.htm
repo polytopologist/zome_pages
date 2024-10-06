@@ -13,115 +13,84 @@ Triality with <a href="http://www.zometool.com/">Zometool</a><br>
 </p>
 
 <p>
-A "duality" in mathematics is a correspondence between two objects,
-exhibiting some kind of equivalence beween them.
-For instance, one says the cube and regular octahedron are dual
-because one can switch from one to the other by interchanging the words
-"face" and "vertex".  The cube has 6 faces, with 3 meeting at every vertex,
-and the regular octahedron has 6 vertices, and there are 3 vertices on each face.
-The cube and regular octahedron, indeed, are similar because the have the same
-symmetry group.  There is a duality in the projective plane because to each
-statement there is associated a dual statement where the words "point" and
-"line" are interchanged.  In topology, there is a duality between open
-and closed subsets of a space; a set is open exactly when its complement is closed.
-In differential/algebraic geometry/topology, there is a duality between
-cycles and cocycles.  The list goes on and on and on.
-</p>
+This page is about 
+"<a href="https://en.wikipedia.org/wiki/Triality">triality</a>"
+in the Zome System.
+Consider the followiong three Zometool models of the 16-cell:<br>
 
-<p>
-Likewise, a "triality" is a correspondence between three objects, showing
-that they are essentially equivalent.  However, whereas dualities in mathematics
-are extremely common, trialities are harder to find.  One of the more famous
-instances of triality occurs in the representation theory of the spin group Spin(8),
-the universal covering group of the special orthogonal group SO(8).
-The phenomenon of triality for Spin(8) is an essential consequence of the symmetry
-of its Coxeter graph D(4):
-</p>
 
-<p align="center">
-<img border="0" src="images/d4graph.gsp.jpg" width=250><br>
-The Coxeter Graph D(4)</p>
+<center><img border="0" src="images/zometriality062005.jpg"><br>
+Zome Projections of the 16-Cell</center>
 
-</p>
-It is clear that the automorphism group of this graph is isomorphic to the 6-element 
-group S(3) of permutations on three letters, in other words, the symmetry
-group of an equilateral triangle.  The triality for Spin(8) works as follows:
-To each irreducible representation of Spin(8) is associated a particular labeling
-of the vertices of the Coxeter graph D(4).  By permuting the branches of this graph
-one obtains as many as 5 other corresponding representations of Spin(8).  These 6 representations,
-in general, are not isomorphic as Spin(8)-modules, but nevertheless share various critical properties.
-</p>
-
-<p>
-Many Zome models are intimately related to the geometry of Hamilton's quaternions,
-and quaternions provide a useful paradigm for studying the phenomenon of "triality".
-It is therefore not a surprise to see the phenomenon of triality occur
-with some Zome models.
-Consider the following Zome models of the 16-cell:</p>
-<p align="center">
-<img border="0" src="images/zometriality062005.jpg"><br>
-Zome Projections of the 16-Cell</p>
-<p>Upon completion of any of these three models, one should be able to find
-a total of 16 tetrahedra arranged so that each edge is shared by 4
-tetrahedra and the vertex figure is a regular octahedron.  Hence each
-is a model of a 16-cell.  
-</p>
 
 
 <p>
-As usual, each of these models represents the image of the projection
-<center>p : (w,x,y,z) |---> (x,y,z).</center>
-of the vertices and edges of a 16-cell.
-Notice that each of these models is constructed from 8 balls, 6 R1 struts, 6 R2 struts, 6 Y2 struts,
-and 6 B2 struts, and that the construction of each differs only slightly from the others.  
-Each model has two B2 equilateral triangles, each of which uses three balls.  For each model,
-the two remaining balls lie on an axis of trihedral symmetry.  For each model,
-there is a unique strut type from {R1,R2,Y2} which does not emanate from this
-trihedral axis.  Truncating the 16-cell to its
-edge midpoints yields the 24-cell, an arrangement of 24 regular octahedra
-in 4-dimensional space.  The remarkable fact here is that truncating
-any one of these three models yields the same Zome model of the
-24-cell.  </p>
+Notice that each of these models is uses 8 connectors, 6 R1 struts, 
+6 R2 struts, 6 Y2 struts, and 6 B2 struts.  Each model has two 
+B2 equilateral triangles, each of which uses three connectors.  For each model,
+the two remaining connectors lie on an axis of trihedral symmetry.  For each model,
+there is a unique strut type among {R1,R2,Y2} which does not emanate from this
+trihedral axis.  We therefore have a sort of triality, provided we ignore
+the distinction between yellow and red struts.
+</p>
+
 
 <p align="center">
 <img border="0" src="images/24cell062005.jpg"><br>
 Zome Projection of the 24-Cell </p>
 
 <p>
-Notice again that this model has the same trihedral symmetry as the three projections
-of th 16-cell given earlier.  (The black balls represent intersections between some of
-the projected edges, and do not represent vertices of the 24-cell.)
-</p>
-
-<p> Based on this evidence,
-one may suspect there is a triality between these three different Zome models,
-and indeed this is the case.  In fact, this triality is merely
-another manifestation of the triality provided by the D(4) Coxeter graph.
+Truncating the regular 16-cell to its edge midpoints yields the regular 24-cell.
+As a matter of fact, truncating any one of these models in this manner
+yields the same Zome model of the 24-cell.  Thus, we have more evidence
+of a triality underlying these models.  We shall see that this triality is a
+manifestation of the triality in the D(4) root system.
 </p>
 
 
 
 
 
+<p><b>Quaternions and the 600-Cell</b></p>
 
 
-
-
-<p><b>Quaternionic Definitions of Regular Polychora</b></p>
-
+<p>
+The purpose here is to see a somewhat non-intuitive construction of the 24-cell
+using the Zome System model of the regular 600-cell.  This construction reveals that the
+<a href="https://en.wikipedia.org/wiki/Binary_icosahedral_group">binary icosahedral group</a>
+is intimately related to D(4) triality.
+</p>
 
 
 <p>
 The vertex sets for the three models of the 16-cell pictured above are imbedded in 
-a particular way in the vertex set for the 600-cell, and, in discussing
-the 600-cell, one quickly encounters quaternions and the binary icosahedral group.
-First, let Q denote the usual 8-element group of quaternions generated by
-<b>i</b> and <b>j</b>.  Next, define the "binary tetrahedral group" T
-as the smallest group of quaternions containing <b>i</b> and
-&frac12;(1+<b>i</b>+<b>j</b>+<b>k</b>).  Notice that T is the union
-of Q with the 16 quaternions which can be produced from
-<center>&frac12;(1+<b>i</b>+<b>j</b>+<b>k</b>)</center>
-by any choice of signs in the four coordinates.  Next, define the "binary icosahedral
+a particular way in the vertex set for the 600-cell, and there is some convenient
+notation for this set if one is willing to work with quaternions.
+Let Q={±<b>1</b>,±<b>i</b>,±<b>j</b>,±<b>k</b>} be the usual 8-element 
+group of quaternions, where the elements satisfy Hamilton's equation,
+<center><b>i</b><sup>2</sup>=<b>j</b><sup>2</sup>=<b>k</b><sup>2</sup>=<b>ijk</b>=-<b>1.</b></center>
+Next, let T be the union of Q with the 16 quaternions
+obtained from
+<center>&frac12;(<b>1</b>+<b>i</b>+<b>j</b>+<b>k</b>)</center>
+by applying all possible choices of signs of the coordinates.
+The set T is closed under quaternion multiplication and is known as the
+binary tetrahedral group.  Moreover,
+the set T, as regarded as a subset of <b>R</b><sup>4</sup>, comprise the
+vertices of a regular 24-cell.
+</p>
+
+<p>
+Let b=&frac12;(1+√5) denote the Golden Ratio and a=&frac12;(1-√5) be its 
+field-theoretic conjugate, and define a quaternion by
+<center><b>x</b>:=&frac12;(-b<b>1</b>+<b>i</b>+a<b>j</b>).</center>
+It is routine to verify that <b>x</b><sup>5</sup>=-<b>1</b> under quaternion
+multiplication.  The elements of the binary icosahedral group consists of 
+the union of the sets
+<center>Q,<b>x</b>Q,<b>x</b><sup>2</sup>Q,<b>x</b><sup>3</sup>Q,<b>x</b><sup>4</sup>Q.</center>
+</p>
+
+<p>
+Next, define the "binary icosahedral
 group" I to be the smallest group of quaternions containing <b>i</b> and
 &frac12;(a<b>i</b>+<b>j</b>+b<b>k</b>), where b is the Golden Ratio
 and a is its field-theoretic conjugate.  Then I contains T as a subgroup,
@@ -131,88 +100,41 @@ by applications of an arbitrary choice of signs and/or an even
 permutation of the four coordinates.
 </p>
 
-
 <p>
-The 120 elements of I coincide with the vertices of a regular 600-cell in R^4.
-Two vertices are joined by an edge iff their dot product is b/2.  
-Also, the 8 elements of Q coincide with the vertices of a regular 
-16-cell, and the 24 elements of T coincide with the vertices of a
-regular 24-cell.  Call these three polytopes, as defined here,
-the "canonical" 600-cell, 16-cell, and 24-cell, respectively.
+The elements of the groups Q, T, and I, as expressed here with quaternions,
+provide convenient notation for vertex sets of 4-dimensional regular polytopes.
+For example, the elements of Q coincide with the vertices of a regular
+16-cell, the elements of T are the vertices of a regular 24-cell, and
+the elements of I are the vertices of a regular 600-cell.  Moreover,
+since quaternion multiplication amounts to an orthogonal transformation,
+multiplying any of these sets by a fixed non-zero quaternion also yields 
+vertex sets of the same polytopes.
 </p>
 
 <p>
-Although the preceding construction of the 24-cell may seem a 
-bit contrived, the object fits quite naturally into the quaternion 
-geometry of 4-dimensional space.  Suppose <b>q</b> is any non-zero 
-quaternion, and let
-<center>E={<b>q</b>,<b>iq</b>,<b>jq</b>,<b>kq</b>}={e(1),e(2),e(3),e(4)},</center>
-the set obtained by multiplying <b>q</b> by the usual basis
-for the quaternions.  Then E is automatically
-an orthogonal basis for R^4,
-and one can immediately say that the 16-cell is the 
-convex polytope whose vertices lie in E or the negatives -E. 
-Call this 16 cell "induced by <b>q</b> on the right".
-One can similarly
-obtain the left-induced 16-cell by first multiplying the quaternion
-basis by <b>q</b> on the left, etc.  The 24 midpoints &frac12;(&plusmn;e(i)&plusmn;e(j)) of the
-left-induced 16-cell
-coincide with the vertices of a 24-cell.  Correspondingly,
-there is now a 24-cell "left-induced" by <b>q</b>
-and a 24-cell "right-induced" by <b>q</b>.
+If <b>q</b> is any non-zero quaternion, and G is any one of the groups
+{Q,T,I}, then let <b>q</b>G (respectively G<b>q</b>) denote the set of all
+products of the form <b>qx</b> (respectively <b>xq</b>) where <b>x</b> is
+a quaternion in G.
 </p>
 
-<p>
-The geometry of quaternions serve, again quite naturally,
-to illustrate the self-duality of the 24-cell.  Considering
-the vertices as quaternions, one may obtain the centers of the 24 octahedra,
-coinciding with the vertices of the dual polytope, by multiplying by
-the quaternion &frac12;(1+<b>i</b>).  Multiplying by this quaternion
-again, one obtains the original 24 vectors, although they are now scaled
-down by a factor of &frac12;.  As the careful
-reader may have noticed by now, the particular scale of the quaternions
-representing vertices
-does not play a great role in determining whether one has a 24-cell; the only
-thing that matters is their relative placement in 4-dimensional space.
-Thus, multiplication by
-1+<b>i</b> represents a sort of "projective dualization" transformation,
-sending a 24-cell to its dual.  
-</p>
+
+<p><b>The Zometool Models </b></p>
 
 <p>
-One may have realized by now that the groups Q, T, and I serve to provide
-some convenient notation to designate vertex sets for many
-polychora.
-For example, if <b>q</b> is a non-zero quaternion, then 2Q<b>q</b>
-is the vertex set for the 16-cell left-induced by <b>q</b>.
-Similarly, <b>q</b>T is the vertex set for a 24-cell, and
-<b>q</b>(1+<b>i</b>)T is the vertex set for the dual 24-cell.
-Indeed, since these (convex) polychora are determined uniquely
-by their vertex sets, one may use this notation to designate
-the polychora themselves.  Thus, for example, one may say 
-<b>q</b>T is "the" 24-cell left-induced by <b>q</b>
-</p>
-
-<p><b>Exploration of the Zome Models </b></p>
-
-<p>
-In order
-to see the triality, one studies the vertex set 2(1+<b>i</b>)I, obtained by
-multiplying each element of I by 2(1+<b>i</b>).  This transformation
-dilates the vectors in I by a factor of sqrt(8).  (The factor 2 is used to clear
-a lot of the fractions.)  Moreover, quaternion
-multiplication on the left affects an orthogonal transformation which
-is a composition of two commuting rotations.  If one studies the elements
-of 2(1+<b>i</b>)I, one notices that it has 4 orbits of the vectors
-<center>(-bb,a,a,a), (32 elements), </center>
+In order to see the triality, consider the vertex set 2(1+<b>i</b>)I, obtained by
+multiplying each element of I by 2(1+<b>i</b>).  This transformation is a composition
+with a "rotation" by π/4 with a dilation by √8.  This set is invariant under the
+group generated by all permutations and all even numbers of sign changes in the
+four coordinates, but there are four orbits under this action.  We may specify orbit
+representatives as
+<center>(-b<sup>2</sup>,a,a,a), (32 elements), </center>
 <center>(a-b,1,1,1), (32 elements), </center>
-<center>(aa,b,b,b), (32 elements), </center>
+<center>(a<sup>2</sup>,b,b,b), (32 elements), </center>
 and
-<center>(2,2,0,0), (24 elements), </center>
-under the group generated by even numbers of sign changes
-and arbitrary permutations of the four coordinates.  (Here
-bb and aa respectively denote the squares of b and a.)
-The first of these orbits is another image of the 24-cell;
+<center>(2,2,0,0), (24 elements). </center>
+(For notational convenience, we denote the quaternion w+<b>i</b>x+<b>j</b>y+<b>k</b>z by (w,x,y,z).
+The last of these orbits is another image of the 24-cell;
 in fact, these 24 vectors coincide with the centers of the 
 24 octahedra of the 24-cell represented by T, thus
 exbihiting its self-duality.  
@@ -221,9 +143,9 @@ exbihiting its self-duality.
 <p>
 One can see the triality by examining the first three orbits
 described above.  Denote 
-<center>[a]=(-bb,a,a,a)Q, [1]=(a-b,1,1,1)Q, and [b]=(aa,b,b,b)Q,</center>
-the 16-cells left-induced by (-bb,a,a,a), (a-b,1,1,1), and
-(aa,b,b,b).  Projecting down to 3-space using the mapping p,
+<center>[a]=(-b<sup>2</sup>,a,a,a)Q, [1]=(a-b,1,1,1)Q, and [b]=(a<sup>2</sup>,b,b,b)Q,</center>
+the 16-cells left-induced by (-b<sup>2</sup>,a,a,a), (a-b,1,1,1), and
+(a<sup>2</sup>,b,b,b).  Projecting down to 3-space using the mapping p,
 one obtains the three Zome models pictured above.  This is where
 one should scrutinize the models very carefully.  Only one of these
 three models has a pair of balls where only R1's and R2's meet.  This
@@ -265,7 +187,18 @@ yields the same projection of the 24-cell.
 </p>
 <br><br>
 
-<hr>
+
+<p align="center">
+<svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="70" cy="40" r="3" />
+  <circle cx="25" cy="14" r="3" />
+  <circle cx="25" cy="66" r="3" />
+  <circle cx="40" cy="40" r="3" />
+  <line x1="40" y1="40" x2="70" y2="40" style="stroke:rgb(0,0,0);stroke-width:2" />
+  <line x1="40" y1="40" x2="25" y2="14" style="stroke:rgb(0,0,0);stroke-width:2" />
+  <line x1="40" y1="40" x2="25" y2="66" style="stroke:rgb(0,0,0);stroke-width:2" />
+</svg><br>
+The Coxeter Graph D(4)</p>
 
 
 
