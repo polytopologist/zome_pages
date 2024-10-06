@@ -1,8 +1,8 @@
-
-Since every face of a floral vertex is floral, we should acquaint ourselves with 3-dimensional floral vertices before considering 4-dimensional floral vertices.  Up to congruence, there are precisely four types of 3-dimensional floral vertices.  These appear in the [reference](https://arxiv.org/abs/2210.12012), and we may also use vZome to visualize them:
 ---
-title:  The 24-Cell and its Snub
+title:  Generic Orthotopes in vZome
 layout: default
+image:  https://polytopologist.github.io/vzome-sharing/2024/07/30/08-39-20-universal00/universal00.png
+description:  Here are 3- and 4-dimensional floral vertices and some generic orthotopes.
 ---
 
 
